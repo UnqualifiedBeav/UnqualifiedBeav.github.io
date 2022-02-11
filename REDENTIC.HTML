@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="REDENTIC.css">
+	<script src="REDENTIC.js"></script>
+	<title>REDENTIC</title>
+</head>
+<body>
+
+	<h1><img class="heart1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_corazón.svg/1920px-Heart_corazón.svg.png"/>REDENTIC<img class="heart1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_corazón.svg/1920px-Heart_corazón.svg.png"/></h1>
+	<marquee><p class="inforedentic">"The developer who can't develop tweaks on her new Mac!"</p></marquee>
+
+<p class="bcount">BIRTHDAY COUNTDOWN</p>
+	<div id="timer"></div>
+	<script type="text/javascript">
+		function updateTimer() {
+			future = Date.parse("Feb 12, 2022 00:00:00");
+			now = new Date();
+			diff = future - now;
+
+			days = Math.floor(diff / (1000 * 60 * 60 * 24));
+			hours = Math.floor(diff / (1000 * 60 * 60));
+			mins = Math.floor(diff / (1000 * 60));
+			secs = Math.floor(diff / 1000);
+
+			d = days;
+			h = hours - days * 24;
+			m = mins - hours * 60;
+			s = secs - mins * 60;
+
+			document.getElementById("timer")
+			.innerHTML =
+			'<div>' + d + '<span>: days</span></div>' +
+			'<div>' + h + '<span>: hours</span></div>' +
+			'<div>' + m + '<span>: minutes</span></div>' +
+			'<div>' + s + '<span>: seconds</span></div>';
+		}
+		setInterval('updateTimer()', 1000);
+	</script>
+
+</body>
+</body>
+</html>

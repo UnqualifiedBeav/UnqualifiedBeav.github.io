@@ -1,0 +1,42 @@
+h1 {
+	text-align: center;
+	color: black;
+	transition: 200ms;
+}
+
+h1:hover .heart1 {
+	width: 40px;
+	height: 40px;
+}
+
+h1:hover {
+	font-size: 52px;
+}
+
+* {
+	cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg), auto;
+}
+
+body {
+	font-family: system-ui,-apple-system,".Helvetica NeueUI","Helvetica Neue",Arial,sans-serif;
+	background-color: grey;
+}
+
+.inforedentic {
+	text-align: center;
+	font-style: italic;
+}
+
+.heart1 {
+	width: 25px;
+	height: 25px;
+	transition: 200ms;
+}
+
+#timer {
+	text-align: center;
+}
+
+.bcount {
+	text-align: center;
+}
